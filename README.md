@@ -1,14 +1,16 @@
-# Welcome to your CDK TypeScript project!
+CDK project which creates
 
-This is a blank project for TypeScript development with CDK.
+### AWS Resources
 
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
+* ECR Repository
+* ECS Cluster
+* Alb Rule
 
-## Useful commands
+### Docker
 
- * `npm run build`   compile typescript to js
- * `npm run watch`   watch for changes and compile
- * `npm run test`    perform the jest unit tests
- * `cdk deploy`      deploy this stack to your default AWS account/region
- * `cdk diff`        compare deployed stack with current state
- * `cdk synth`       emits the synthesized CloudFormation template
+* Dockerfile is in docker directory.
+
+### Commands
+
+* `cdk deploy CdkEcsRepoStack`
+* `cdk deploy CdkEcsStack`

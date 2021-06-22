@@ -1,0 +1,58 @@
+{
+  "vpc-provider:account=656169322665:filter.vpc-id=vpc-068c4966e38871db2:region=ap-northeast-1:returnAsymmetricSubnets=true": {
+    "vpcId": "vpc-068c4966e38871db2",
+    "vpcCidrBlock": "172.30.0.0/16",
+    "availabilityZones": [],
+    "subnetGroups": [
+      {
+        "name": "Public",
+        "type": "Public",
+        "subnets": [
+          {
+            "subnetId": "subnet-04358d4297103d04e",
+            "cidr": "172.30.1.0/24",
+            "availabilityZone": "ap-northeast-1b",
+            "routeTableId": "rtb-0105f4b3ca1d5321f"
+          },
+          {
+            "subnetId": "subnet-075839aa2e90be5aa",
+            "cidr": "172.30.2.0/24",
+            "availabilityZone": "ap-northeast-1c",
+            "routeTableId": "rtb-0105f4b3ca1d5321f"
+          },
+          {
+            "subnetId": "subnet-050e9c7f8268dbf1e",
+            "cidr": "172.30.3.0/24",
+            "availabilityZone": "ap-northeast-1d",
+            "routeTableId": "rtb-0105f4b3ca1d5321f"
+          }
+        ]
+      }
+    ]
+  },
+  "load-balancer:account=656169322665:loadBalancerArn=arn$:aws:elasticloadbalancing:ap-northeast-1:656169322665:loadbalancer/app/alb/918376bd6748a5e6:loadBalancerType=application:region=ap-northeast-1": {
+    "loadBalancerArn": "arn:aws:elasticloadbalancing:ap-northeast-1:656169322665:loadbalancer/app/alb/918376bd6748a5e6",
+    "loadBalancerCanonicalHostedZoneId": "Z14GRHDCWA56QT",
+    "loadBalancerDnsName": "alb-908122223.ap-northeast-1.elb.amazonaws.com",
+    "vpcId": "vpc-068c4966e38871db2",
+    "securityGroupIds": [
+      "sg-0c029928c855a2493"
+    ],
+    "ipAddressType": "ipv4"
+  },
+  "hosted-zone:account=656169322665:domainName=figment-research.com:region=ap-northeast-1": {
+    "Id": "/hostedzone/Z2JFRCXUA639Z3",
+    "Name": "figment-research.com."
+  },
+  "security-group:account=656169322665:region=ap-northeast-1:securityGroupId=sg-0c029928c855a2493": {
+    "securityGroupId": "sg-0c029928c855a2493",
+    "allowAllOutbound": true
+  },
+  "load-balancer-listener:account=656169322665:listenerPort=443:listenerProtocol=HTTPS:loadBalancerArn=arn$:aws:elasticloadbalancing:ap-northeast-1:656169322665:loadbalancer/app/alb/918376bd6748a5e6:loadBalancerType=application:region=ap-northeast-1": {
+    "listenerArn": "arn:aws:elasticloadbalancing:ap-northeast-1:656169322665:listener/app/alb/918376bd6748a5e6/6b1ffaaac5451bf1",
+    "listenerPort": 443,
+    "securityGroupIds": [
+      "sg-0c029928c855a2493"
+    ]
+  }
+}
